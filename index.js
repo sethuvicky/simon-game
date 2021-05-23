@@ -72,14 +72,14 @@ document.addEventListener("click",function(e){
       audio.play();
       reset.removeClass("remove");
       h1.textContent = `player 2 turn press switch . and press any key to start`;
-      if(score1 > 20){
+      if(score1 > 100){
         h1.textContent = "player 1 wins"
         let audio1 = new Audio("sounds/game-win-sound-effect.mp3")
         audio1.play();
         document.body.style.backgroundImage = "url(images/winner.jpg)"
 
       
-      }else if(score2 > 20){
+      }else if(score2 > 100){
         let audio2 = new Audio("sounds/game-win-sound-effect.mp3")
 
         h1.textContent = "player 2 wins"
