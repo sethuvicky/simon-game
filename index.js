@@ -14,7 +14,7 @@ let gameover = false;
 let enterscore1 = document.querySelector(".score-player1");
 let enterscore2 = document.querySelector(".score-player2");
 
-h1.textContent = "get 100 score to win .press any key to start"
+h1.textContent = "get 100 score to win .press click anywere to start"
 
 function random(){
   userClickedPattern = [];
@@ -29,7 +29,7 @@ function random(){
   randomcolor.fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
 }
 
-document.addEventListener("keypress" ,"click",function(e){
+document.addEventListener("click",function(e){
     random()
     console.log(gamePattern)
 
@@ -71,7 +71,7 @@ document.addEventListener("click",function(e){
       let audio = new Audio("sounds/wrong.mp3");
       audio.play();
       reset.removeClass("remove");
-      h1.textContent = `player 2 turn press switch . and press any key to start`;
+      h1.textContent = `player 2 turn press switch . and click anywere to start`;
       if(score1 > 100){
         h1.textContent = "player 1 wins"
         let audio1 = new Audio("sounds/game-win-sound-effect.mp3")
