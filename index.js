@@ -14,7 +14,7 @@ let gameover = false;
 let enterscore1 = document.querySelector(".score-player1");
 let enterscore2 = document.querySelector(".score-player2");
 
-h1.textContent = "get 20 score to win"
+h1.textContent = "get 100 score to win .press any key to start"
 
 function random(){
   userClickedPattern = [];
@@ -29,7 +29,7 @@ function random(){
   randomcolor.fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
 }
 
-document.addEventListener("keypress",function(e){
+document.addEventListener("keypress" ,"click",function(e){
     random()
     console.log(gamePattern)
 
