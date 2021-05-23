@@ -1,0 +1,91 @@
+body {
+  text-align: center;
+  background-image: url("images/back.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;  
+  height: 100vh;
+
+}
+
+#restart {
+  width: 300px;
+  border-radius: 100px;
+  background-color: rgba(75, 228, 28, 0.835);
+}
+.player-1 {
+  background-color: rgba(255, 255, 255, 0.418);
+  position: absolute;
+  left: 2%;
+  padding: 10px;
+  border-radius: 10%;
+  margin: 5px;
+}
+.player-2 {
+  background-color: rgba(255, 255, 255, 0.418);
+  position: absolute;
+  right: 2%;
+  padding: 10px;
+  border-radius: 10%;
+  margin: 5px;
+}
+
+.remove {
+  display: none;
+}
+
+#level-title {
+  font-family:  cursive;
+  font-size: 3rem;
+  margin:  5%;
+  color: black;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
+
+.game-over {
+  background-color: rgba(255, 0, 0, 0.63);
+  opacity: 0.8;
+}
+
+.red {
+  background-color: rgba(255, 0, 0, 0.596);
+  border-radius: 80px;
+}
+
+.green {
+  background-color: rgba(0, 128, 0, 0.678);
+  border-radius: 80px;
+
+}
+
+.blue {
+  background-color: rgba(0, 0, 255, 0.609);
+  border-radius: 80px;
+
+}
+
+.yellow {
+  background-color: rgba(255, 255, 0, 0.568);
+  border-radius: 80px;
+
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
